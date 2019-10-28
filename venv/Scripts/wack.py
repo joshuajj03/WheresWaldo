@@ -22,8 +22,8 @@ BLUE = (0, 0, 255)
 
 WINDOWWIDTH = 1547
 WINDOWHEIGHT = 1000
-WALDOWIDTH = 60
-WALDOHEIGHT = 100
+WALDOWIDTH = 30
+WALDOHEIGHT = 50
 CURSORHEIGHT = 32
 CURSORWIDTH = 32
 DISPLAYSURF = pygame.display.set_mode((WINDOWWIDTH, WINDOWHEIGHT))
@@ -153,7 +153,7 @@ def updatePoints():
 
 def updateTime():
     POINTS_SURF = BASICFONT.render("Time Remaining: " + str(int(searchTime - (time.time() - startTime))), True, BLACK)
-    DISPLAYSURF.blit(POINTS_SURF, (700, 30))
+    DISPLAYSURF.blit(POINTS_SURF, (750, 30))
 
 
 
